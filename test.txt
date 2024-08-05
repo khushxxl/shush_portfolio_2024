@@ -1,0 +1,62 @@
+https://accounts.spotify.com/authorize?client_id=06fefed632a34dfdb1283435103d688c&response_type=code&redirect_uri=http://localhost:3004/callback&scope=user-read-currently-playing+user-top-read 
+
+
+http://localhost:3004/callback?code=AQBkr68Op3-7SGTbfkik-o5zRtJwfc0kAcuSUM9JU11Np5mRoXYdXzpmFzaSrfEPCTv1sX7rMpcZwN87T06NxompcLiqM5sqX7hwNeoFVD_Y7jRXKwPcE79VnB0nTOWsZByh2SNbbcmIpctKQhcAXQERnSCJLeyE_iufdz7SN13bfvN6qDzw0v-OxYF9-pfG7iwSQq-7HGBvfsbYO8aBvhvpvvZopns1YnWQAF82
+
+
+
+
+refresh_token = AQBkr68Op3-7SGTbfkik-o5zRtJwfc0kAcuSUM9JU11Np5mRoXYdXzpmFzaSrfEPCTv1sX7rMpcZwN87T06NxompcLiqM5sqX7hwNeoFVD_Y7jRXKwPcE79VnB0nTOWsZByh2SNbbcmIpctKQhcAXQERnSCJLeyE_iufdz7SN13bfvN6qDzw0v-OxYF9-pfG7iwSQq-7HGBvfsbYO8aBvhvpvvZopns1YnWQAF82
+
+
+curl -H "Authorization: Basic MDZmZWZlZDYzMmEzNGRmZGIxMjgzNDM1MTAzZDY4OGM6NzEzY2Y1ZGRmYTMxNDE1NTg3NDk4OGU5YzE4MTQ1YjQK" -d grant_type=authorization_code -d code=AQBkr68Op3-7SGTbfkik-o5zRtJwfc0kAcuSUM9JU11Np5mRoXYdXzpmFzaSrfEPCTv1sX7rMpcZwN87T06NxompcLiqM5sqX7hwNeoFVD_Y7jRXKwPcE79VnB0nTOWsZByh2SNbbcmIpctKQhcAXQERnSCJLeyE_iufdz7SN13bfvN6qDzw0v-OxYF9-pfG7iwSQq-7HGBvfsbYO8aBvhvpvvZopns1YnWQAF82 -d redirect_uri=http%3A%2F%2Flocalhost:3004/callback https://accounts.spotify.com/api/token
+
+
+
+curl -H "Authorization: Basic YmRhMTBjZDcxOTU2NDg5ODgxODJmMmQ5NzcyN2RlN2U6NjZmZTU5OTJjYjZlNDFjZmEwNDdfkdjfkHKkjdfdwODk0YjI=" -d grant_type=authorization_code -d code=AQD_kIzZ0OVXkeeIU4jnLWADFJDKdcWLYo9ySdfdfdkHKJFtGExxgw_aCxJrZflWVeARvjaGDfdfddf6KYpFlo2t2JZ0SQceyvdKs4AcGgCLSqm7vMyiRWCy_t06WmLet8v6aEBx8U4eKHxKiEx_sBgvCSlYo5wptKUd0Gwa6oyqOHFZnE7KSbxTVwMkQ668Ezjz2aeFEPp1TU9ij6dM4AjO4YFCH2hoMWgO3k5XrbdKnK7U2Y30wb8gHjEA6LnE8yu8cyvaY9WQ -d redirect_uri=http%3A%2F%2Flocalhost:3000/callback https://accounts.spotify.com/api/token
+curl -H "Authorization: Basic MDZmZWZlZDYzMmEzNGRmZGIxMjgzNDM1MTAzZDY4OGM6NzEzY2Y1ZGRmYTMxNDE1NTg3NDk4OGU5YzE4MTQ1YjQK" -d grant_type=authorization_code -d code=AQD_kIzZ0OVXkeeIU4jnLWADFJDKdcWLYo9ySdfdfdkHKJFtGExxgw_aCxJrZflWVeARvjaGDfdfddf6KYpFlo2t2JZ0SQceyvdKs4AcGgCLSqm7vMyiRWCy_t06WmLet8v6aEBx8U4eKHxKiEx_sBgvCSlYo5wptKUd0Gwa6oyqOHFZnE7KSbxTVwMkQ668Ezjz2aeFEPp1TU9ij6dM4AjO4YFCH2hoMWgO3k5XrbdKnK7U2Y30wb8gHjEA6LnE8yu8cyvaY9WQ -d redirect_uri=http%3A%2F%2Flocalhost:3000/callback https://accounts.spotify.com/api/token
+
+
+-----
+
+
+
+
+
+
+
+NmRlZDQ3ZDQ3YjM3NDdhZDhiZmU2NTJkNTA3ZDkwNmY6ODg5ZTZmZjY0NjY0NGFkNWE1NWMxNzhlY2ZhZGFhNWUK
+
+curl -H "Authorization: Basic NmRlZDQ3ZDQ3YjM3NDdhZDhiZmU2NTJkNTA3ZDkwNmY6ODg5ZTZmZjY0NjY0NGFkNWE1NWMxNzhlY2ZhZGFhNWUK" -d grant_type=authorization_code -d code=AQBkr68Op3-7SGTbfkik-o5zRtJwfc0kAcuSUM9JU11Np5mRoXYdXzpmFzaSrfEPCTv1sX7rMpcZwN87T06NxompcLiqM5sqX7hwNeoFVD_Y7jRXKwPcE79VnB0nTOWsZByh2SNbbcmIpctKQhcAXQERnSCJLeyE_iufdz7SN13bfvN6qDzw0v-OxYF9-pfG7iwSQq-7HGBvfsbYO8aBvhvpvvZopns1YnWQAF82 -d redirect_uri=http%3A%2F%2Flocalhost:3004/callback https://accounts.spotify.com/api/token
+
+
+import Image from "next/image";
+import React, { useRef } from "react";
+import SpotifyPlayerNPM from "react-spotify-web-playback";
+import { BorderBeam } from "./ui/border-beam";
+
+function SpotifyPlayer({ data }: { data: any }) {
+  const songTrack = data?.items?.length > 0 ? data?.items[0]?.track?.uri : null;
+
+  if (songTrack) {
+    const token: any = sessionStorage.getItem("access_token");
+
+    return (
+      <div className="relative border-2 flex items-center p-5 mx-auto  border-gray-600 rounded-lg max-w-xl w-full">
+        <SpotifyPlayerNPM
+          styles={{
+            bgColor: "transparent",
+            color: "white",
+            trackNameColor: "white",
+          }}
+          initialVolume={0.1}
+          token={token}
+          uris={[songTrack]}
+        />
+        <BorderBeam duration={10} />
+      </div>
+    );
+  }
+}
+
+export default SpotifyPlayer;
