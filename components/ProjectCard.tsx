@@ -17,11 +17,14 @@ const ProjectCard = ({
   onExpandClick?: any;
 }) => {
   return (
-    <div className="bg-[#1C1C1C] flex relative items-center justify-between p-5 rounded-xl  md:max-w-lg max-w-sm w-full">
+    <div
+      onClick={onExpandClick}
+      className="bg-[#1C1C1C]  flex relative items-center justify-between p-5 rounded-xl  md:max-w-lg max-w-sm w-full"
+    >
       <ExpandIcon
         onClick={onExpandClick}
         className=" absolute right-4 top-4 cursor-pointer"
-        size={18}
+        size={14}
       />
       <div className=" flex  items-center  p-2 w-fit">
         {image && (
@@ -35,9 +38,9 @@ const ProjectCard = ({
             />
           </div>
         )}
-        <div className="ml-3">
+        <div className="ml-3 cursor-pointer">
           <p className="font-bold">{title}</p>
-          <p className="text-gray-500 max-w-xs ">{desc}</p>
+          <p className="text-gray-500 max-w-xs mt-4 ">{desc}</p>
         </div>
       </div>
       <div>

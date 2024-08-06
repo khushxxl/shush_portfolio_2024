@@ -1,15 +1,30 @@
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { liveProjects, web3Projects } from "@/utils/data";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 import { AppleIcon, XIcon } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function Projects() {
   const [selectedProject, setselectedProject] = useState<any>(liveProjects[1]);
+  const expandedProjectRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Scroll to expanded project when selectedProject changes
+    if (selectedProject && expandedProjectRef.current) {
+      expandedProjectRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [selectedProject]);
+
   return (
     <div
+      ref={expandedProjectRef}
       id="projects"
       className="min-h-screen max-w-6xl flex justify-center  w-full flex-col items-center"
     >
@@ -105,9 +120,10 @@ function Projects() {
         </div>
       </div>
       <div className="mt-5 gap-x-4 gap-y-10 grid grid-cols-1 lg:grid-cols-3">
-        {liveProjects.map((data) => {
+        {liveProjects.map((data, i) => {
           return (
             <ProjectCard
+              key={i}
               title={data?.title}
               desc={data?.shortDesc}
               image={undefined}
