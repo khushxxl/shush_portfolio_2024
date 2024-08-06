@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 function Projects() {
-  const [selectedProject, setselectedProject] = useState<any>(liveProjects[1]);
+  const [selectedProject, setselectedProject] = useState<any>();
   const expandedProjectRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
