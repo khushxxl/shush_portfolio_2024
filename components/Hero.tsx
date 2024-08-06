@@ -127,14 +127,8 @@ function Hero() {
           </Link>
         </div>
 
-        <SpotifyPlayer
-          data={
-            currentlyPlayingTrack != null || undefined
-              ? currentlyPlayingTrack?.item
-              : recentlyPlayedTracks?.items[0]?.track
-          }
-        />
-        <div className="flex items-center space-x-10">
+        <SpotifyPlayer data={defaultSpotifyTrack} />
+        {/* <div className="flex items-center space-x-10">
           {workTypes.map((type: any, i: number) => {
             return (
               <div
@@ -146,9 +140,15 @@ function Hero() {
               </div>
             );
           })}
-        </div>
-        <div>
+        </div> */}
+        <div className="flex flex-col space-y-5 lg:flex-row lg:space-y-0  items-center lg:space-x-4">
           <BookMeeting />
+
+          <Link href={"/#projects"}>
+            <div className="bg-slate-800 font-semibold p-3 rounded-xl text-white px-6">
+              see my work?
+            </div>
+          </Link>
         </div>
       </div>
 

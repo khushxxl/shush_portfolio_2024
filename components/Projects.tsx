@@ -9,7 +9,10 @@ import Link from "next/link";
 function Projects() {
   const [selectedProject, setselectedProject] = useState<any>(liveProjects[1]);
   return (
-    <div className="min-h-screen max-w-6xl flex justify-center  w-full flex-col items-center">
+    <div
+      id="projects"
+      className="min-h-screen max-w-6xl flex justify-center  w-full flex-col items-center"
+    >
       <div className="flex items-center">
         <p className="max-w-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 bg-clip-text text-transparent font-semibold text-4xl text-center">
           my code projects
@@ -78,9 +81,10 @@ function Projects() {
         </div>
       </div>
       <div className="mt-5 gap-x-4 gap-y-10 grid grid-cols-1 lg:grid-cols-3">
-        {web3Projects.map((data) => {
+        {web3Projects.map((data, i) => {
           return (
             <ProjectCard
+              key={i}
               title={data?.title}
               desc={data?.dsc}
               image={undefined}

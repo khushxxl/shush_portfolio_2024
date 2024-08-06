@@ -12,6 +12,14 @@ function MySaaS() {
             constantly updated, and curated for you to include it in your next
             project.`,
       deployedLink: "https://www.simplejscode.com/",
+      image: require("../app/assets/sjc.png"),
+    },
+    {
+      title: "The Pay Page",
+      website: "thepaypage.me",
+      desc: `Create Payment Integration with Beautiful Pages in 3 minutes`,
+      deployedLink: "https://thepaypage.me",
+      image: require("../app/assets/paypage_ss.png"),
     },
   ];
   const SAASComponent = ({
@@ -62,7 +70,7 @@ function MySaaS() {
   };
 
   return (
-    <div className="min-h-screen max-w-6xl flex  w-full justify-center flex-col items-center">
+    <div className="min-h-screen h-full my-14 max-w-6xl flex  w-full justify-center flex-col items-center">
       <div className="flex items-center">
         <p className="max-w-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 bg-clip-text text-transparent font-semibold text-4xl text-center">
           my saas products{" "}
@@ -77,39 +85,12 @@ function MySaaS() {
             website={data?.website}
             desc={data?.desc}
             title={data?.title}
-            isReverse={false}
-            image={require("../app/assets/sjc.png")}
+            isReverse={i % 2 != 0 ? true : false}
+            image={data?.image}
             deployedLink={data?.deployedLink}
           />
         );
       })}
-
-      {/* <div className="mt-20 flex flex-col-reverse lg:flex-row lg:space-y-0 space-y-5 items-center justify-between w-full">
-        <div className="mt-5 lg:mt-0">
-          <p className="text-center text-4xl">💸</p>
-          <p className="max-w-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 bg-clip-text text-transparent font-semibold text-4xl text-center">
-            The Pay Page
-          </p>
-          <p className="text-center mt-5 max-w-lg">
-            A hand-picked collection of more than 150+ JS code snippets that's
-            constantly updated, and curated for you to include it in your next
-            project.
-          </p>
-        </div>
-        <div className="relative">
-          <Image
-            className="rounded-xl w-[400px] lg:w-[500px]"
-            alt=""
-            src={require("../app/assets/paypage_ss.png")}
-          />
-          <BorderBeam />
-          <div className="">
-            <p className="text-center mt-2 text-blue-500 underline cursor-pointer">
-              thepaypage.com
-            </p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }

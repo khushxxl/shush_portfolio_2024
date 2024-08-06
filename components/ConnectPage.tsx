@@ -5,7 +5,7 @@ import BookMeeting from "./BookMeeting";
 
 function ConnectPage() {
   return (
-    <div className="max-w-6xl flex  w-full justify-center items-center flex-col ">
+    <div className="max-w-6xl flex  w-full justify-center mt-20 items-center flex-col ">
       <p className="max-w-2xl   bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 bg-clip-text text-transparent font-semibold text-4xl text-center">
         connect with me easily here
       </p>

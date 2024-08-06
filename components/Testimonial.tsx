@@ -4,7 +4,7 @@ import React from "react";
 
 function Testimonial() {
   return (
-    <div className="min-h-screen max-w-6xl justify-center  w-full flex-col ">
+    <div className="min-h-screen max-w-6xl justify-center  mt-20 w-full flex-col ">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-2">
         <p className="max-w-2xl  bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 bg-clip-text text-transparent font-semibold text-4xl text-center">
           see what my clients have to say{"  "}

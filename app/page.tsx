@@ -21,7 +21,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
-    <main className="flex  w-[100%] mx-auto   flex-col space-y-20   items-center justify-center ">
+    <main className="flex  w-[100%] mx-auto   flex-col    items-center justify-center ">
       {/* <div onClick={authorize}>authorise</div> */}
       <Hero />
       <MySaaS />

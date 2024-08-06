@@ -1,5 +1,5 @@
 const SPOTIFY_CLIENT_ID: string = `06fefed632a34dfdb1283435103d688c`;
-const redirectUri: string = "http://localhost:3004";
+const redirectUri: string = "http://localhost:3001";
 
 const access_token =
   "BQD3gOURMsNif6_Xi87IzLr9Lr4qn-_1eGGMG5BtpY0KCGh7nw0LUhgDoe57B9v6SD4WneVMRYuHm5-aHRLx3QRc8WxmetXq2I08xkxpvlfhyVxsiJWqFOfuwZhEtBySne6XscGoO2wvzId945Wx-Z9e-Z1l03RUfbz0fxYhDt9hPaCUX3IVjF-YsuJ_EMtZ4hwh5zwVKw_f08-wDqqhaIiXborXxLSYpetrlzApjOZPf2Sbjhl9_-oplgpI";
