@@ -1,5 +1,13 @@
 "use client";
-import { Cross, LinkedinIcon, Twitter, XIcon } from "lucide-react";
+import {
+  Cross,
+  LinkedinIcon,
+  LucideYoutube,
+  Twitter,
+  XIcon,
+  Youtube,
+  YoutubeIcon,
+} from "lucide-react";
 import React, { useEffect, useState } from "react";
 import SpotifyPlayer from "./SpotifyPlayer";
 import Link from "next/link";
@@ -113,17 +121,16 @@ function Hero() {
         </p>
         <div className="flex items-center space-x-8 mt-4">
           <Link target="_blank" href={"https://twitter.com/khushaal_04"}>
-            <div className="mt-5 flex  items-center text-sm cursor-pointer ">
-              <Twitter size={20} fill="#2B9BF0" color="#2B9BF0" />
-            </div>
+            <Twitter size={20} fill="#2B9BF0" color="#2B9BF0" />
           </Link>
           <Link
             target="_blank"
             href={"https://www.linkedin.com/in/khushcodes/"}
           >
-            <div className="mt-5 flex  items-center text-sm cursor-pointer ">
-              <LinkedinIcon fill="#2B9BF0" color="#2B9BF0" />
-            </div>
+            <LinkedinIcon fill="#2B9BF0" color="#2B9BF0" />
+          </Link>
+          <Link target="_blank" href={"https://www.youtube.com/@codewithkhush"}>
+            <Youtube fill="red" size={28} color="white" />
           </Link>
         </div>
 
