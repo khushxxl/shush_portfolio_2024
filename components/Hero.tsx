@@ -1,6 +1,7 @@
 "use client";
 import {
   Cross,
+  Github,
   LinkedinIcon,
   LucideYoutube,
   Twitter,
@@ -128,6 +129,9 @@ function Hero() {
             href={"https://www.linkedin.com/in/khushcodes/"}
           >
             <LinkedinIcon fill="#2B9BF0" color="#2B9BF0" />
+          </Link>
+          <Link target="_blank" href={"https://github.com/khushxxl"}>
+            <Github fill="#2B9BF0" color="#2B9BF0" />
           </Link>
           <Link target="_blank" href={"https://www.youtube.com/@codewithkhush"}>
             <Youtube fill="red" size={28} color="white" />

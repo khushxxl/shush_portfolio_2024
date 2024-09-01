@@ -8,7 +8,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "./ui/button";
-import { Linkedin, MailIcon, MenuIcon, TwitterIcon } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  MailIcon,
+  MenuIcon,
+  TwitterIcon,
+} from "lucide-react";
+import Link from "next/link";
 
 function HeaderDropDown() {
   return (
@@ -19,13 +26,26 @@ function HeaderDropDown() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-slate-950">
-        <DropdownMenuItem className="space-x-2">
-          <TwitterIcon /> <span>Twitter</span>
+        <DropdownMenuItem>
+          <Link
+            target="_blank"
+            className="flex space-x-2 cursor-pointer"
+            href={"https://twitter.com/khushaal_04"}
+          >
+            <TwitterIcon /> <span>Twitter</span>
+          </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem className="space-x-2">
-          <Linkedin /> <span>Linkedin</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem className="space-x-2">
+        <Link target="_blank" href={"https://www.linkedin.com/in/khushcodes/"}>
+          <DropdownMenuItem className="space-x-2 cursor-pointer">
+            <Linkedin /> <span>Linkedin</span>
+          </DropdownMenuItem>
+        </Link>
+        <Link target="_blank" href={"https://github.com/khushxxl"}>
+          <DropdownMenuItem className="space-x-2 cursor-pointer">
+            <Github /> <span>Github</span>
+          </DropdownMenuItem>
+        </Link>
+        <DropdownMenuItem className="space-x-2 cursor-pointer">
           <MailIcon /> <span>Hire Me</span>
         </DropdownMenuItem>
       </DropdownMenuContent>

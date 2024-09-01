@@ -1,4 +1,4 @@
-import { LinkedinIcon, Twitter } from "lucide-react";
+import { Github, LinkedinIcon, Twitter } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import BookMeeting from "./BookMeeting";
@@ -20,6 +20,10 @@ function ConnectPage() {
           <div className="flex  items-center text-sm cursor-pointer ">
             <LinkedinIcon fill="#2B9BF0" color="#2B9BF0" />
           </div>
+        </Link>
+        <p className="text-3xl">/</p>
+        <Link target="_blank" href={"https://github.com/khushxxl"}>
+          <Github fill="#2B9BF0" color="#2B9BF0" />
         </Link>
         <p className="text-3xl">/</p>
         <BookMeeting />
